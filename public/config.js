@@ -1,5 +1,5 @@
 window.__RUNTIME_CONFIG__ = {
-  "VITE_ORDERLY_BROKER_ID": "demo",
+  "VITE_ORDERLY_BROKER_ID": "wa1fu",
   "VITE_ORDERLY_BROKER_NAME": "WA1FU",
   "VITE_DISABLE_MAINNET": "false",
   "VITE_DISABLE_TESTNET": "true",
@@ -25,7 +25,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "https://x.com/WA1FUCOIN",
   "VITE_SEO_SITE_NAME": "WA1FU",
   "VITE_SEO_SITE_DESCRIPTION": "WA1FU DEX ®",
-  "VITE_SEO_SITE_URL": "https://dex.orderly.network/wa1fu-4710/",
+  "VITE_SEO_SITE_URL": "https://wa1fu.net",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@wa1fucoin",
