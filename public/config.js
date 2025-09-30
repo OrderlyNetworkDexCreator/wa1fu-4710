@@ -18,7 +18,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Leaderboard,Vaults,Rewards",
-  "VITE_CUSTOM_MENUS": "WA1FU, http://wa1fu.com",
+  "VITE_CUSTOM_MENUS": "WA1FU, http://wa1fu.com; Buy WA1FU, https://app.cetus.zone/swap/0x2::sui::SUI/0x322dd7f9e71ce0430fffc5b1886d42572b3e7cae7db6f358c2d6a717fea119f1::waifu::WAIFU; Stake WA1FU, https://moonbags.io/bondingcurve/coins/wa1fu-sui-ApaOAQToKb",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/wa1fus",
   "VITE_DISCORD_URL": "",
