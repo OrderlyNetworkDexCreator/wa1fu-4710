@@ -25,7 +25,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "https://x.com/TokenAnime",
   "VITE_SEO_SITE_NAME": "ANIME",
   "VITE_SEO_SITE_DESCRIPTION": "ANIME DEX ®",
-  "VITE_SEO_SITE_URL": "https://dex.orderly.network/wa1fu-4710/",
+  "VITE_SEO_SITE_URL": "https://animedex.org",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@tokenanime",
