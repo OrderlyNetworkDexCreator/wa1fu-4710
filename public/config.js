@@ -1,6 +1,7 @@
 window.__RUNTIME_CONFIG__ = {
   "VITE_ORDERLY_BROKER_ID": "wa1fu",
   "VITE_ORDERLY_BROKER_NAME": "ANIME",
+  "VITE_BROKER_EOA_ADDRESS": "0x15848b1700f1db7162f97ae00550574d689184bd",
   "VITE_DISABLE_MAINNET": "false",
   "VITE_DISABLE_TESTNET": "true",
   "VITE_ORDERLY_MAINNET_CHAINS": "900900900,56,42161,1",
@@ -19,6 +20,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Leaderboard,Vaults,Rewards",
   "VITE_CUSTOM_MENUS": "ANIME TOKEN, https://www.animetoken.org/; Buy ANIME, https://pancakeswap.finance/swap?outputCurrency=0xac472d0eed2b8a2f57a6e304ea7ebd8e88d1d36f",
+  "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/TokenAnime",
   "VITE_DISCORD_URL": "https://discord.com/invite/JygfB7J",
@@ -34,5 +36,6 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_AVAILABLE_LANGUAGES": "en,zh,ja,es,ko,vi,de,fr,ru,id,tr,it,pt,uk,pl,nl",
   "VITE_USE_CUSTOM_PNL_POSTERS": "true",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "1",
-  "VITE_TRADING_VIEW_COLOR_CONFIG": ""
+  "VITE_TRADING_VIEW_COLOR_CONFIG": "",
+  "VITE_ANALYTICS_SCRIPT": ""
 };
