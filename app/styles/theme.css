@@ -1,6 +1,6 @@
 :root {
-  --oui-font-family: 'Manrope', sans-serif;
-  --oui-font-size-base: 16px;
+  --oui-font-family: 'Fira Sans', sans-serif;
+  --oui-font-size-base: 14.5px;
 
   /* colors */
   --oui-color-primary: 176 132 233;
@@ -95,6 +95,13 @@
 }
 
 html, body {
-  font-family: 'Manrope', sans-serif !important;
-  font-size: 16px !important;
+  font-family: 'Fira Sans', sans-serif !important;
+  font-size: 14.5px !important;
+}
+
+.orderly-app-container,
+.orderly-app-container *,
+.orderly-app-container *::before,
+.orderly-app-container *::after {
+  font-family: 'Fira Sans', sans-serif !important;
 }
