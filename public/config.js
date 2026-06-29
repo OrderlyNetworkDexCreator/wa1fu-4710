@@ -18,7 +18,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_APP_DESCRIPTION": "ANIME DEX ®",
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
-  "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Leaderboard,Vaults,Rewards,Swap",
+  "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Leaderboard,Vaults,Rewards,Swap,Campaigns",
   "VITE_CUSTOM_MENUS": "ANIME TOKEN, https://www.animetoken.org/; Buy ANIME, https://pancakeswap.finance/swap?outputCurrency=0xac472d0eed2b8a2f57a6e304ea7ebd8e88d1d36f",
   "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",
