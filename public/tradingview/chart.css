@@ -77,3 +77,7 @@ div[data-section-name='extendLeftTradingLine'] {
     --tv-color-platform-background: #16141c;
     --tv-color-pane-background: #16141c;
 }
+
+[data-name="legend-source-exchange"] {
+    display: none !important;
+}
