@@ -31,6 +31,8 @@ import {
   getRuntimeConfigBoolean,
   getRuntimeConfigNumber,
 } from "./runtime-config";
+import { resolveDexThemeConfig } from "./theme-config";
+import { createTradingViewConfig } from "./trading-view-config";
 
 interface MainNavItem {
   name: string;
@@ -45,14 +47,6 @@ type MenuConfigItem = {
   target?: string;
   isDefault?: boolean;
 } & Pick<MainNavItemType, "customRender">;
-
-interface ColorConfigInterface {
-  upColor?: string;
-  downColor?: string;
-  pnlUpColor?: string;
-  pnlDownColor?: string;
-  chartBG?: string;
-}
 
 export type OrderlyConfig = {
   orderlyAppProvider: {
@@ -207,31 +201,10 @@ const getBottomNavIcon = (menuId: string) => {
   }
 };
 
-const getColorConfig = (): ColorConfigInterface | undefined => {
-  const customColorConfigEnv = getRuntimeConfig(
-    "VITE_TRADING_VIEW_COLOR_CONFIG",
-  );
-
-  if (
-    !customColorConfigEnv ||
-    typeof customColorConfigEnv !== "string" ||
-    customColorConfigEnv.trim() === ""
-  ) {
-    return undefined;
-  }
-
-  try {
-    const customColorConfig = JSON.parse(customColorConfigEnv);
-    return customColorConfig;
-  } catch (e) {
-    console.warn("Error parsing VITE_TRADING_VIEW_COLOR_CONFIG:", e);
-    return undefined;
-  }
-};
-
 export const useOrderlyConfig = () => {
   const { t } = useTranslation();
   const { isMobile } = useScreen();
+  const themeConfigSource = useMemo(() => resolveDexThemeConfig().source, []);
 
   const footerProps = useMemo<FooterProps>(
     () => ({
@@ -277,15 +250,8 @@ export const useOrderlyConfig = () => {
   );
 
   const tradingViewConfig = useMemo<TradingPageProps["tradingViewConfig"]>(
-    () => ({
-      scriptSRC: withBasePath(
-        "/tradingview/charting_library/charting_library.js",
-      ),
-      library_path: withBasePath("/tradingview/charting_library/"),
-      customCssUrl: withBasePath("/tradingview/chart.css"),
-      colorConfig: getColorConfig(),
-    }),
-    [],
+    () => createTradingViewConfig(themeConfigSource),
+    [themeConfigSource],
   );
 
   const sharePnLConfig = useMemo<TradingPageProps["sharePnLConfig"]>(
